@@ -1,0 +1,27 @@
+package {{.Package}}
+
+import (
+	"bytes"
+	"strings"
+
+	{{.GinkgoImport}}
+	{{.GomegaImport}}
+
+	"testing"
+)
+
+func Test{{.FormattedName}}(t *testing.T) {
+	RegisterFailHandler(Fail)
+	RunSpecs(t, "{{.FormattedName}} Suite")
+}
+
+var _ = Describe("{{.FormattedName}}", func() {
+	Context("when reading from input and writing to output", func() {
+		It("should work for the sample", func() {
+			in := strings.NewReader("CHANE_ME_INPUT")
+			out := new(bytes.Buffer)
+			Submission(in, out)
+			Ω(out.String()).Should(Equal("CHANGE_ME_OUTPUT"))
+		})
+	})
+})

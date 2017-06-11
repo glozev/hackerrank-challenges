@@ -14,17 +14,16 @@ const expect = require('chai').expect;
 
 const path = require('path');
 const child = require('child_process');
-
-const $challenge = require('../../src/$challenge/$challenge.js')
+const src_path = '../../src/$challenge/$challenge.js'
+const sub = require(src_path)
 
 describe('$challenge', () => {
-
   it('should pass dummy test', () => {
     expect(true).to.be.true;
   });
 
-  it('should read from stdin and write to stdout', (done) => {
-    exec = path.join(__dirname, '../../src/$challenge/$challenge.js');
+  it.skip('should read from stdin and write to stdout', (done) => {
+    exec = path.join(__dirname, src_path);
     proc = child.spawn(exec);
 
     proc.stdin.write('CHANGE_ME\n');

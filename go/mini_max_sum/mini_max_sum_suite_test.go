@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"strings"
 
-	. "github.com/glozev/hackerrank-challenges/mini_max_sum"
+	. "github.com/glozev/hackerrank-challenges/go/mini_max_sum"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 

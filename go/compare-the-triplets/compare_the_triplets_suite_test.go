@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"strings"
 
-	. "github.com/glozev/hackerrank-challenges/compare-the-triplets"
+	. "github.com/glozev/hackerrank-challenges/go/compare-the-triplets"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 

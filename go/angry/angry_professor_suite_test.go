@@ -1,7 +1,7 @@
 package main_test
 
 import (
-	. "github.com/glozev/hackerrank-challenges/angry"
+	. "github.com/glozev/hackerrank-challenges/go/angry"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 

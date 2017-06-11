@@ -1,0 +1,17 @@
+{
+  "name": "hackerrank-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-test": "istanbul cover node_modules/mocha/bin/_mocha -- --recursive --watch",
+    "test": "istanbul cover node_modules/mocha/bin/_mocha -- --recursive"
+  },
+  "author": "",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^3.0.1",
+    "sinon": "^1.17.5"
+  }
+}

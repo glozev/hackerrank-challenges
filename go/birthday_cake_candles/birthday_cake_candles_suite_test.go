@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"strings"
 
-	. "github.com/glozev/hackerrank-challenges/birthday_cake_candles"
+	. "github.com/glozev/hackerrank-challenges/go/birthday_cake_candles"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
@@ -22,7 +22,7 @@ var _ = Describe("BirthdayCakeCandles", func() {
 			in := strings.NewReader("CHANE_ME_INPUT")
 			out := new(bytes.Buffer)
 			Submission(in, out)
-			Ω(out.String()).Should(Equal("CHANGE_ME_OUTPUT"))
+			Ω(out.String()).Should(Equal(""))
 		})
 	})
 })

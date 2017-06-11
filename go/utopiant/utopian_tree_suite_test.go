@@ -1,7 +1,7 @@
 package main_test
 
 import (
-	. "github.com/glozev/hackerrank-challenges/utopiant"
+	. "github.com/glozev/hackerrank-challenges/go/utopiant"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
